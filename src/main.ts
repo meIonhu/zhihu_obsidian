@@ -12,6 +12,7 @@ import * as open from "./open_service";
 
 export default class ZhihuObPlugin extends Plugin {
     async onload() {
+        console.log("on load");
         const settings = await loadSettings(this.app.vault);
         this.registerDomEvent(
             document,
